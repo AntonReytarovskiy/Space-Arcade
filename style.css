@@ -1,0 +1,145 @@
+body {
+    background: black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#ship {
+	background: url(image/mainship.png);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+.shot {
+	position: absolute;
+    background-color: red;
+    width: 7px;
+    border-radius: 5px;
+    height: 30px;
+    -moz-box-shadow: 0px 0px 30px red;
+	box-shadow: 0px 0px 30px red;
+}
+
+::-webkit-progress-bar {
+    background: black;
+}
+
+::-webkit-progress-value {
+    background: green;
+}
+
+::-moz-progress-bar {
+    background: green;
+}
+
+progress {
+    display: block;
+    margin-top: 20px;
+    color: green;
+    background: black;
+    border: 2px solid green;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200px;
+    height: 25px;
+    line-height: 21px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: default;
+}
+
+#progress-text {
+    width: 200px;
+    text-align: center;
+	position: absolute;
+    top: 3.5px;
+    left: 8px;
+    font-weight: bold;
+    color: yellow;
+    cursor: default;
+    font-family: 'Oswald', sans-serif;
+}
+
+#score {
+	position: absolute;
+    top: 0;
+    right: 0;
+    cursor: default;
+}
+
+#score p {
+    margin-top: 1;
+    float: left;
+    margin-right: 20px;
+	color: yellow;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    cursor: default;
+}
+
+.enemy {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+#start-game {
+	position: absolute;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    z-index: 6;
+    border: 5px solid yellow;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#start-game p {
+	font-family: 'Oswald', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+    cursor: default;
+}
+
+#start-game #display-score {
+   display: none;
+}
+
+#start-game #button {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100px;
+    background: yellow;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#start-game #button:hover {
+    background-color: #d0d003;
+}
